@@ -14,34 +14,7 @@
 </head>
 
 <body>
-<header>
-    <nav class="navbar">
-        <div class="container">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="#">
-                    <img src="favicon.png" alt="Logo">
-                </a>
-            </div>
-            <div id="navbarMenu" class="navbar-menu">
-                <div class="navbar-end">
-                    <a href="#learn" class="navbar-item">
-                        Learn with pleasure
-                    </a>
-                    <a href="#skills" class="navbar-item">
-                        Increase your skills
-                    </a>
-                    <a href="#picture" class="navbar-item">
-                        Picture
-                    </a>
-                    <a href="#contact" class="navbar-item">
-                        Contact-Us
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
-</header>
-
+    <?php include("_header.php")?>
 <section class="hero is-info is-medium is-bold">
     <div class="hero-body header-image">
         <div class="container has-text-centered">
@@ -62,7 +35,7 @@
                             <h2 class="title article-title">Learn with pleasure</h2>
                             <div class="tags has-addons level-item">
                                 <span class="tag is-rounded is-info">@tic</span>
-                                <span class="tag is-rounded">Jul 22, 2019</span>
+                                <span class="tag is-rounded"><?=date('M d, Y')?><!--Autre syntaxe--></span>
                             </div>
                         </div>
                     </div>
@@ -87,7 +60,7 @@
                             <h2 class="title article-title">Increase your skills</h2>
                             <div class="tags has-addons level-item">
                                 <span class="tag is-rounded is-info">@tac</span>
-                                <span class="tag is-rounded">Aug 14, 2019</span>
+                                <span class="tag is-rounded"><?=date('M d, Y')?><!--Autre syntaxe--></span>
                             </div>
                         </div>
                     </div>
@@ -139,7 +112,7 @@
                     </div>
                 </div>
                 <div class="content article-body">
-                    <form>
+                    <form action="form.php">
                         <div class="field">
                             <label for="firstname" class="label">First Name</label>
                             <div class="control">
@@ -175,25 +148,5 @@
         </section>
     </div>
 </main>
-
-<footer class="footer has-text-centered">
-    <div class="container">
-        <div class="columns">
-            <div class="column">
-                <figure class="image image-footer has-image-centered">
-                    <img src="images/wildcodeschool.png" alt="WCS logo">
-                </figure>
-                <p>
-                    <strong class="has-text-weight-semibold">
-                        <a class="wcs-link shadow" href="https://www.wildcodeschool.com">Wild Code School</a>
-                    </strong>
-                </p>
-                <p>
-                    Learn tech skills with passion
-                </p>
-            </div>
-        </div>
-    </div>
-</footer>
 </body>
 </html>
